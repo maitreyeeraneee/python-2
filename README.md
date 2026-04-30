@@ -1,164 +1,197 @@
-<h1 align="center">Python-2 🚀</h1>
+<h1 align="center">🐍 Python-2 | Data Science Portfolio</h1>
 
 <p align="center">
-  Intermediate Data Science Portfolio Projects focused on Exploratory Data Analysis, Machine Learning, Visualization, and Statistical Thinking.
+  Intermediate Data Science projects showcasing <b>EDA</b>, <b>Machine Learning</b>, and <b>Data Visualization</b> skills.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-Intermediate-blue?style=for-the-badge&logo=python"/>
+  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python"/>
   <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-green?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Seaborn-Visualization-purple?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Matplotlib-EDA-orange?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/NumPy-Computing-purple?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Matplotlib-Visualization-orange?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Seaborn-Statistics-coral?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Scikit--Learn-ML-red?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/XGBoost-Boosting-yellow?style=for-the-badge"/>
 </p>
 
 ---
 
-# 📌 Repository Goal
+## 📖 Overview
 
-This repository documents my **Phase 2 transition from Python fundamentals to real-world Data Science projects.**
+Welcome to **Python-2** — my Phase 2 data science portfolio repository. This collection features hands-on projects that transition from Python fundamentals to real-world data science applications.
 
-The focus of this repository is to build:
+### 🎯 What You'll Find
 
-- Advanced Pandas skills  
-- Data cleaning & wrangling expertise  
-- Data visualization skills  
-- Statistical analysis ability  
-- Machine learning fundamentals  
-- Recruiter-ready portfolio projects  
+| Project | Type | Description |
+|---------|------|-------------|
+| **Airbnb NYC EDA** | Exploratory Data Analysis | Analyze ~49K listings to uncover pricing trends, room types, and location insights |
+| **Customer Churn Prediction** | Machine Learning | Build classification models to predict telecom customer churn |
 
 ---
 
-# 🛠 Tech Stack
+## 🛠 Tech Stack
 
-| Category | Tools |
+<p align="center">
+
+| Category | Technologies |
+|----------|---------------|
+| **Languages** | Python 3.x |
+| **Data Processing** | Pandas, NumPy |
+| **Visualization** | Matplotlib, Seaborn |
+| **Machine Learning** | Scikit-learn, XGBoost |
+| **Tools** | VS Code, Git, GitHub |
+
+</p>
+
+---
+
+## 📂 Project Structure
+
+```
+python-2/
+├── .gitignore
+├── README.md
+├── Airbnb-EDA/
+│   ├── airbnb_eda.py              # Main EDA script
+│   ├── AB_NYC_2019.csv           # Dataset (~49K listings)
+│   ├── README.md
+│   └── plots/                   # 7 visualizations
+│       ├── price_distribution.png
+│       ├── room_type_distribution.png
+│       ├── neighbourhood_price.png
+│       ├── correlation_heatmap.png
+│       ├── geo_price_scatter.png
+│       ├── neighbourhood_price_density.png
+│       └── top_neigh_room_dist.png
+└── Customer-Churn-Prediction/
+    ├── churn_prediction.py       # Main ML pipeline
+    ├── WA_Fn-UseC_-Telco-Customer-Churn.csv
+    ├── README.md
+    └── plots/                   # 7 visualizations
+        ├── churn_distribution.png
+        ├── tenure_distribution.png
+        ├── monthly_charges_vs_churn.png
+        ├── roc_auc_curves.png
+        ├── model_comparison_accuracy.png
+        ├── confusion_matrices.png
+        └── feature_importance_top10.png
+```
+
+---
+
+## 📊 Featured Projects
+
+### 🏠 Airbnb NYC EDA
+
+> **Objective:** Perform exploratory data analysis on NYC Airbnb listings to uncover business insights.
+
+| Metric | Value |
+|--------|-------|
+| **Dataset Size** | ~49,000 listings |
+| **Features** | Price, room type, location, reviews |
+| **Techniques** | Data cleaning, groupby, pivot tables, visualizations |
+
+#### Key Insights
+
+| Finding | Insight |
+|---------|---------|
+| 📈 Most Expensive Borough | **Manhattan** — highest average prices |
+| 🏠 Most Common Room Type | **Private rooms** — dominate the market |
+| 💰 Premium Neighborhoods | Tribeca, NoHo, Flatiron District |
+| ⭐ Review Correlation | Affordable listings receive more reviews |
+
+#### Visualizations Generated
+
+- 📊 Price distribution histogram with KDE
+- 🏠 Room type countplot
+- 📍 Average price by neighborhood group
+- 🌡️ Correlation heatmap
+- 🗺️ Geographic scatter plot
+- 🎻 Violin plot (price density)
+- 📊 Top neighborhoods room distribution
+
+---
+
+### 📉 Customer Churn Prediction
+
+> **Objective:** Build an end-to-end ML pipeline to predict telecom customer churn.
+
+| Component | Details |
 |-----------|---------|
-| Programming | Python |
-| Data Analysis | Pandas, NumPy |
-| Visualization | Matplotlib, Seaborn |
-| Machine Learning | Scikit-learn |
-| Development | VS Code |
-| Version Control | Git, GitHub |
+| **Models** | Logistic Regression, Random Forest, XGBoost |
+| **Evaluation** | Accuracy, F1 Score, ROC-AUC |
+| **Feature Engineering** | AvgCharges (TotalCharges/tenure) |
+
+#### Workflow
+
+```
+Data Loading → Cleaning → Feature Engineering → Train-Test Split → Model Training → Evaluation
+```
+
+#### Model Comparison
+
+| Model | Type | ROC-AUC Score |
+|-------|------|--------------|
+| **XGBoost** | Ensemble Boosting | Competitive |
+| **Random Forest** | Ensemble Bagging | Strong |
+| **Logistic Regression** | Linear | Reliable |
+
+#### Key Insights
+
+| Finding | Insight |
+|---------|---------|
+| 📉 Tenure & Churn | Lower tenure = higher churn risk |
+| 💰 Monthly Charges | Higher charges → more churn |
+| 🏆 Best Model | Tree-based models outperform linear |
+| 🎯 Key Features | Tenure, MonthlyCharges, AvgCharges |
 
 ---
 
-# 📂 Phase 2 Projects Roadmap
+## 🚀 How to Run
 
-| Project | Status | Skills Learned |
-|----------|----------|----------------|
-| Airbnb NYC EDA | ✅ Completed | Advanced Pandas, EDA, Visualization |
-| Customer Churn Prediction | 🔜 Coming Soon | Classification, Feature Engineering |
-| House Price Prediction | 🔜 Coming Soon | Regression, Model Evaluation |
-| Netflix Dashboard | 🔜 Coming Soon | Plotly, Storytelling |
-| A/B Testing Analysis | 🔜 Coming Soon | Statistics, Hypothesis Testing |
+### Prerequisites
 
----
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn xgboost
+```
 
-# 🏆 Featured Project: Airbnb NYC Exploratory Data Analysis
+### 1️⃣ Airbnb NYC EDA
 
-## Project Objective
+```bash
+cd Airbnb-EDA
+python airbnb_eda.py
+```
 
-Analyze Airbnb listings in :contentReference[oaicite:6]{index=6} to uncover:
+**Output:**
+- Console: Summary statistics
+- `plots/`: 7 PNG visualizations
 
-- Pricing trends  
-- Room type preferences  
-- Location-based demand  
-- Review behavior  
-- Availability patterns  
+### 2️⃣ Customer Churn Prediction
 
----
+```bash
+cd Customer-Churn-Prediction
+python churn_prediction.py
+```
 
-## Dataset
-
-**Source:** :contentReference[oaicite:7]{index=7} Airbnb NYC Open Dataset  
-
-- ~49,000 listings  
-- Multiple location features  
-- Pricing information  
-- Review metrics  
-- Host details  
-- Availability metrics  
+**Output:**
+- Console: Model evaluation metrics
+- `plots/`: 7 PNG visualizations
 
 ---
 
-# 🔍 Analysis Performed
-
-### Data Cleaning
-- Handled missing values  
-- Replaced null review values  
-- Cleaned host information  
-- Removed price outliers  
-
-### Advanced Pandas
-- `groupby()`
-- `pivot_table()`
-- sorting
-- filtering
-- statistical summaries
-
-### Visualizations
-- Price Distribution Histogram  
-- Room Type Count Plot  
-- Neighbourhood Pricing Bar Chart  
-- Correlation Heatmap  
-- Violin Plot  
-- Geographic Scatter Plot  
-- Categorical Distribution Plot  
-
----
-
-# 📈 Key Insights
-
-| Business Question | Insight |
-|-------------------|----------|
-| Which borough is most expensive? | Manhattan had highest average pricing |
-| Which room type dominates? | Private rooms were most common |
-| Which areas are premium? | Tribeca, NoHo, Flatiron District |
-| What affects pricing? | Location heavily influenced prices |
-| Which listings get more reviews? | More affordable listings often received more reviews |
-
----
-
-# 📸 Visual Outputs
-
-| Visualization | Preview |
-|---------------|-----------|
-| Price Distribution | `plots/price_distribution.png` |
-| Room Type Distribution | `plots/room_type_distribution.png` |
-| Neighbourhood Pricing | `plots/neighbourhood_price.png` |
-| Correlation Heatmap | `plots/correlation_heatmap.png` |
-| Geographic Scatter Plot | `plots/geo_price_scatter.png` |
-
----
-
-# 📚 What I Learned
+## ✨ What I Learned
 
 ✅ Working with messy real-world datasets  
-
-✅ Missing value handling  
-
-✅ Outlier detection/removal  
-
-✅ Advanced Pandas transformations  
-
-✅ Data storytelling  
-
-✅ Business insight generation  
-
-✅ Visualization best practices  
-
+✅ Missing value handling & outlier detection  
+✅ Advanced Pandas transformations (groupby, pivot tables)  
+✅ End-to-end ML pipeline development  
+✅ Model comparison & evaluation  
+✅ Data storytelling & business insights  
+✅ Professional visualization practices  
 ✅ Git + GitHub workflow  
 
 ---
 
-# Why This Repository Matters
-
-This repository represents my transition from learning syntax to solving real-world business problems using data.
-
-Each upcoming project will continue building toward becoming internship-ready in Data Science / Data Analytics roles.
-
----
-
 <p align="center">
-  <b>More projects coming soon ⚡</b>
+  <b>📦 More projects coming soon | Stay tuned! 🚀</b>
 </p>
