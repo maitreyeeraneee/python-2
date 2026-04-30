@@ -1,0 +1,153 @@
+# Python Byte-Compiled / Optimized / DLL Files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+eggs/
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+.venv/
+ENV/
+env/
+.env/
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Jupyter
+.ipynb
+.jupyter/
+jupyter_meta.json
+*.cosave
+ipython_config.py
+
+# Python Debugger
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+.hypothesis/
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Data Science / ML Specific
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.nc
+
+# Plots and Visualizations (Generated files)
+plots/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.pdf
+
+# Model Files
+models/
+*.h5
+*.pkl
+*.pth
+*.ckpt
+*.onnx
+
+# Logs
+*.log
+logs/
+
+# OS Specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment Variables
+.env
+.env.local
+
+# Jupyter Lab / Notebook
+.ipynblab/
+settings.json
+
+# Notebook Outputs
+*.nbconvert.json
+*.html
+
+# SageMath
+*.sage
+
+# NumPy / SciPy
+*.so
+
+# Cython
+*.c
+*.c++
+
+# Build directories
+build/
+dist/
+*.whl
+
+# pip-log
+pip-log.txt
+
+# PEP 440
+.pep440
+
+# Azure
+.azure/
+
+# GCP
+*.gae
+
+# SageMath Cloud
+*.sagews
+
+# Conda
+conda-meta/
+
+# JupyterLab
+node_modules/
+
+# Spyder
+.spyproject/
+.spyderproject/
+.spy/
+
+# R libraries for reticulate
+.Rcheck/
+ vignettes/*.html
+
+# Data directories (optional - uncomment if you want to ignore data files)
+# data/
+# datasets/
+# *.csv
+# *.xlsx
