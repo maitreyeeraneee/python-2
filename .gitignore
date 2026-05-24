@@ -53,11 +53,6 @@ ipython_config.py
 # Data Science / ML Specific
 *.xlsx
 *.xls
-*.parquet
-*.feather
-*.h5
-*.hdf5
-*.pkl
 *.pickle
 *.joblib
 *.nc
