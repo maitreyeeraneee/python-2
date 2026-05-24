@@ -81,34 +81,29 @@ python-2/
 
 ## 📊 Featured Projects
 
-### 🏠 Airbnb NYC EDA
+### 🏡 House Price Prediction using Machine Learning
 
-> **Objective:** Perform exploratory data analysis on NYC Airbnb listings to uncover business insights.
+> **Objective:** Predict house prices with an end-to-end ML workflow—cleaning, feature engineering, cross-validation, and model evaluation.
 
-| Metric | Value |
-|--------|-------|
-| **Dataset Size** | ~49,000 listings |
-| **Features** | Price, room type, location, reviews |
-| **Techniques** | Data cleaning, groupby, pivot tables, visualizations |
+| Feature | What I Did |
+|--------|--------------|
+| **Built with** | Python, Pandas, NumPy, Scikit-learn, Seaborn, Matplotlib, XGBoost |
+| **Models** | Linear Regression, Random Forest, XGBoost |
+| **Performance** | ~**0.90 R²** using Random Forest / XGBoost |
+| **Pipeline** | Preprocessing → Feature Engineering → Cross-Validation → Evaluation → Model Saving |
 
-#### Key Insights
+#### 🔬 What Makes This Project Stand Out
 
-| Finding | Insight |
-|---------|---------|
-| 📈 Most Expensive Borough | **Manhattan** — highest average prices |
-| 🏠 Most Common Room Type | **Private rooms** — dominate the market |
-| 💰 Premium Neighborhoods | Tribeca, NoHo, Flatiron District |
-| ⭐ Review Correlation | Affordable listings receive more reviews |
+- 🧹 Advanced preprocessing + encoding for a real-world regression task
+- 🧠 Feature engineering to boost signal and reduce noise
+- 🧪 Cross-validation for robust generalization
+- 📊 Model evaluation with clean, recruiter-friendly visuals
 
-#### Visualizations Generated
+#### 📈 Visual Insights
 
-- 📊 Price distribution histogram with KDE
-- 🏠 Room type countplot
-- 📍 Average price by neighborhood group
-- 🌡️ Correlation heatmap
-- 🗺️ Geographic scatter plot
-- 🎻 Violin plot (price density)
-- 📊 Top neighborhoods room distribution
+- 📌 **Feature importance analysis** (which variables matter most)
+- 🔥 **Correlation heatmap** (multicollinearity awareness)
+- 🏠 **Actual vs Predicted** visualization (prediction accuracy storytelling)
 
 ---
 
