@@ -1,4 +1,4 @@
-````markdown
+
 <div align="center">
 
 # 🏡 House Price Prediction using Machine Learning
@@ -204,4 +204,4 @@ Through this project, I learned:
 ### Made with ❤️ using Machine Learning & Python
 
 </div>
-```
+
