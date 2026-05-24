@@ -63,14 +63,6 @@ ipython_config.py
 *.nc
 
 
-# Model Files
-models/
-*.h5
-*.pkl
-*.pth
-*.ckpt
-*.onnx
-
 # Logs
 *.log
 logs/
