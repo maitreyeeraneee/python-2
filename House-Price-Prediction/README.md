@@ -136,19 +136,18 @@ The following regression metrics were used:
 
 ## 📌 Feature Importance
 
-<img src="feature_importance.png" width="100%">
+<img width="1000" height="600" alt="feature_importance" src="https://github.com/user-attachments/assets/392a3ee2-a5ac-47b7-b328-7c3a1645e41b" />
 
 ---
 
 ## 📌 Actual vs Predicted
 
-<img src="actual_vs_predicted.png" width="100%">
+<img width="800" height="600" alt="actual_vs_predicted" src="https://github.com/user-attachments/assets/cba34a3c-d144-4728-ae65-53340c156db9" />
 
 ---
 
 ## 📌 Correlation Heatmap
-
-<img src="correlation_heatmap.png" width="100%">
+<img width="1200" height="1000" alt="correlation_heatmap" src="https://github.com/user-attachments/assets/125b8889-b2ac-44cf-b786-0f3725c8ee3f" />
 
 ---
 
@@ -175,13 +174,18 @@ Joblib
  │   ├── actual_vs_predicted.png
  │   ├── correlation_heatmap.png
  │   └── feature_importance.png
- │
  ├── house_price_model.pkl
  ├── house_price_prediction.py
- ├── house_prices.csv
  └── README.md
-
+```
 ---
+
+## Dataset
+
+Due to GitHub file size limitations, the dataset is not included in this repository.
+
+Download the dataset from Kaggle:
+https://www.kaggle.com/datasets/juhibhojani/house-price/data
 
 # 🎯 Key Learnings
 
