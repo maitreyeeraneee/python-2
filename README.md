@@ -187,6 +187,57 @@ python churn_prediction.py
 
 ---
 
+## 🧪 Phase 2 Project • A/B Test Analysis for E-Commerce
+
+<p align="center">
+  <img src="https://img.shields.io/badge/A--B%20Testing-Experiment-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Statistics-Hypothesis%20Testing-2b9eb3?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/T--Test-SciPy-ff6b6b?style=for-the-badge"/>
+</p>
+
+> **Objective:** Determine whether a new e-commerce landing page (treatment) improves conversion rate vs the current page (control) using a statistically defensible A/B testing workflow.
+
+### Project Overview
+- Data cleaning & validation (missing values, duplicates, group checks)
+- Conversion rate analysis (descriptive + visualization)
+- Hypothesis testing with **independent two-sample T-test**
+- Confidence-interval-ready interpretation (conversion lift framing)
+- Time-series conversion trend analysis
+- Business-ready conclusion (recommendation or no decision)
+
+### Tech Stack
+- Python, Pandas, NumPy
+- Matplotlib, Seaborn
+- SciPy (hypothesis testing)
+
+### Key Features
+- Conversion distribution + conversion-by-group visuals
+- Daily conversion trend line plot
+- Clear statistical decision rule based on **p-value < 0.05**
+
+### Statistical Testing (What’s Used)
+- Outcome `converted` is treated as a binary variable (0/1)
+- **SciPy `ttest_ind`** compares mean conversion between `control` and `treatment`
+- Outputs:
+  - **T-statistic** (separation of group means)
+  - **p-value** (evidence against H₀)
+
+### Business Conclusion (Decision Logic)
+- **If p-value < 0.05:** recommend rollout of the new landing page
+- **Else:** no statistically reliable improvement → hold / iterate
+
+### Key Insights (Storytelling)
+- Lift direction: treatment vs control conversion rate
+- Statistical reliability: significant vs not significant
+- Temporal stability: whether daily trends support consistency
+
+### Project Link
+- **A/B Test Analysis for E-Commerce:** [AB-Test-Analysis/README.md](./AB-Test-Analysis/README.md)
+- Script: `AB-Test-Analysis/ab_test_analysis.py`
+
+---
+
 <p align="center">
   <b>📦 More projects coming soon | Stay tuned! 🚀</b>
 </p>
+
