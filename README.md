@@ -20,12 +20,23 @@
 
 Welcome to **Python-2** — my Phase 2 data science portfolio repository. This collection features hands-on projects that transition from Python fundamentals to real-world data science applications.
 
-### 🎯 What You'll Find
+## 🚀 Portfolio Highlights
 
-| Project | Type | Description |
-|---------|------|-------------|
-| **Airbnb NYC EDA** | Exploratory Data Analysis | Analyze ~49K listings to uncover pricing trends, room types, and location insights |
-| **Customer Churn Prediction** | Machine Learning | Build classification models to predict telecom customer churn |
+- End-to-end Machine Learning workflows
+- Statistical Analytics & Hypothesis Testing
+- Exploratory Data Analysis (EDA)
+- Feature Engineering & Model Evaluation
+- Business-focused Data Storytelling
+- Professional Git + GitHub workflow
+
+###  What You'll Find
+
+| Project | Domain | Description |
+|---------|--------|-------------|
+| 🏠 House Price Prediction | Machine Learning • Regression | Predict housing prices using Random Forest & XGBoost regression models |
+| 🧪 A/B Test Analysis | Statistical Analytics | Perform hypothesis testing & conversion analysis for e-commerce experiments |
+| 🏡 Airbnb NYC EDA | Exploratory Data Analysis | Analyze Airbnb listings to uncover pricing & neighborhood insights |
+| 📉 Customer Churn Prediction | Machine Learning • Classification | Predict telecom customer churn using ensemble ML models |
 
 ---
 
@@ -51,30 +62,27 @@ Welcome to **Python-2** — my Phase 2 data science portfolio repository. This c
 python-2/
 ├── .gitignore
 ├── README.md
+├── AB-Test-Analysis/
+│   ├── ab_test_analysis.py
+│   ├── ab_data.csv
+│   ├── README.md
+│   └── plots/
 ├── Airbnb-EDA/
 │   ├── airbnb_eda.py              # Main EDA script
 │   ├── AB_NYC_2019.csv           # Dataset (~49K listings)
 │   ├── README.md
 │   └── plots/                   # 7 visualizations
-│       ├── price_distribution.png
-│       ├── room_type_distribution.png
-│       ├── neighbourhood_price.png
-│       ├── correlation_heatmap.png
-│       ├── geo_price_scatter.png
-│       ├── neighbourhood_price_density.png
-│       └── top_neigh_room_dist.png
+├── House-Price-Prediction/
+│   ├── house_price_prediction.py
+│   ├── house_price_model.pkl
+│   ├── README.md
+│   └── plots/
 └── Customer-Churn-Prediction/
     ├── churn_prediction.py       # Main ML pipeline
     ├── WA_Fn-UseC_-Telco-Customer-Churn.csv
     ├── README.md
     └── plots/                   # 7 visualizations
-        ├── churn_distribution.png
-        ├── tenure_distribution.png
-        ├── monthly_charges_vs_churn.png
-        ├── roc_auc_curves.png
-        ├── model_comparison_accuracy.png
-        ├── confusion_matrices.png
-        └── feature_importance_top10.png
+
 ```
 
 ---
@@ -92,19 +100,6 @@ python-2/
 | **Performance** | ~**0.90 R²** using Random Forest / XGBoost |
 | **Pipeline** | Preprocessing → Feature Engineering → Cross-Validation → Evaluation → Model Saving |
 
-#### 🔬 What Makes This Project Stand Out
-
-- 🧹 Advanced preprocessing + encoding for a real-world regression task
-- 🧠 Feature engineering to boost signal and reduce noise
-- 🧪 Cross-validation for robust generalization
-- 📊 Model evaluation with clean, recruiter-friendly visuals
-
-#### 📈 Visual Insights
-
-- 📌 **Feature importance analysis** (which variables matter most)
-- 🔥 **Correlation heatmap** (multicollinearity awareness)
-- 🏠 **Actual vs Predicted** visualization (prediction accuracy storytelling)
-
 ---
 
 ### 📉 Customer Churn Prediction
@@ -117,11 +112,6 @@ python-2/
 | **Evaluation** | Accuracy, F1 Score, ROC-AUC |
 | **Feature Engineering** | AvgCharges (TotalCharges/tenure) |
 
-#### Workflow
-
-```
-Data Loading → Cleaning → Feature Engineering → Train-Test Split → Model Training → Evaluation
-```
 
 #### Model Comparison
 
@@ -139,38 +129,6 @@ Data Loading → Cleaning → Feature Engineering → Train-Test Split → Model
 | 💰 Monthly Charges | Higher charges → more churn |
 | 🏆 Best Model | Tree-based models outperform linear |
 | 🎯 Key Features | Tenure, MonthlyCharges, AvgCharges |
-
----
-
-## 🚀 How to Run
-
-### Prerequisites
-
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn xgboost
-```
-
-### 1️⃣ Airbnb NYC EDA
-
-```bash
-cd Airbnb-EDA
-python airbnb_eda.py
-```
-
-**Output:**
-- Console: Summary statistics
-- `plots/`: 7 PNG visualizations
-
-### 2️⃣ Customer Churn Prediction
-
-```bash
-cd Customer-Churn-Prediction
-python churn_prediction.py
-```
-
-**Output:**
-- Console: Model evaluation metrics
-- `plots/`: 7 PNG visualizations
 
 ---
 
@@ -238,6 +196,6 @@ python churn_prediction.py
 ---
 
 <p align="center">
-  <b>📦 More projects coming soon | Stay tuned! 🚀</b>
+  <b> Building real-world Machine Learning, Analytics, and Data Science projects consistently.
 </p>
 
