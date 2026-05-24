@@ -32,7 +32,7 @@ sns.barplot(
 #Visualize Conversion Rates
 plt.title("Conversion Rate by Group")
 plt.ylabel("Conversion Rate")
-
+plt.savefig("plots/basic_conversion_comparison.png")
 plt.show()
 
 #T-Test
